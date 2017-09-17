@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xbk-id-6P7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="y38-vJ-tCh">
+            <objects>
+                <viewController id="xbk-id-6P7" customClass="ViewController" customModule="ARShooter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p74-j8-Pkl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dUJ-RX-M0j">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgB-W8-ixi">
+                                <rect key="frame" x="175" y="321" width="24" height="24"/>
+                                <state key="normal" image="plus"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jr1-Vd-kpj">
+                                <rect key="frame" x="140" y="601" width="95" height="36"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="add targets"/>
+                                <connections>
+                                    <action selector="addTargets:" destination="xbk-id-6P7" eventType="touchUpInside" id="FjG-ss-mpd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zgB-W8-ixi" firstAttribute="centerY" secondItem="p74-j8-Pkl" secondAttribute="centerY" id="79E-GZ-vgk"/>
+                            <constraint firstItem="dUJ-RX-M0j" firstAttribute="leading" secondItem="5Ig-pN-Kao" secondAttribute="leading" id="HFB-d7-SYi"/>
+                            <constraint firstItem="dUJ-RX-M0j" firstAttribute="top" secondItem="p74-j8-Pkl" secondAttribute="top" id="hIB-xK-Itz"/>
+                            <constraint firstItem="zgB-W8-ixi" firstAttribute="centerX" secondItem="p74-j8-Pkl" secondAttribute="centerX" id="jXY-GI-ebG"/>
+                            <constraint firstItem="Jr1-Vd-kpj" firstAttribute="centerX" secondItem="p74-j8-Pkl" secondAttribute="centerX" id="mND-Gm-kVR"/>
+                            <constraint firstItem="5Ig-pN-Kao" firstAttribute="bottom" secondItem="Jr1-Vd-kpj" secondAttribute="bottom" constant="30" id="ogU-mq-etG"/>
+                            <constraint firstItem="dUJ-RX-M0j" firstAttribute="bottom" secondItem="5Ig-pN-Kao" secondAttribute="bottom" id="wgB-Ph-poq"/>
+                            <constraint firstItem="dUJ-RX-M0j" firstAttribute="trailing" secondItem="5Ig-pN-Kao" secondAttribute="trailing" id="xre-oq-lgR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Ig-pN-Kao"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="dUJ-RX-M0j" id="c7p-QW-eAN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ARf-Oz-b5p" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" width="24" height="24"/>
+    </resources>
+</document>
